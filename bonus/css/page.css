@@ -67,6 +67,7 @@ section {
 
 section img {
   float: left;
+  border-radius: 3%;
 }
 
 .feature h3 {
