@@ -16,8 +16,17 @@
 }
 
 #container {
-  width: 90%;
+  width: 80%;
   margin: auto;
+}
+
+.banner , .row , header , footer {
+  max-height: 720px;
+  max-width: 1080px;
+}
+
+.row , aside p , .central p , .title h2 p , header li a  {
+    color: lightgrey;
 }
 
 /* regole intestazione */
@@ -46,7 +55,6 @@ header li {
 
 header li a {
   text-decoration: none;
-  color: lightgrey;
 }
 
 header li a:hover {
@@ -64,8 +72,7 @@ header li a:hover {
   background-image: url(../img/banner.jpg);
   background-size: cover;
   background-position: center;
-  height: 500px;;
-  max-width: 100%;
+  min-height: 500px;
   border-radius: 3%;
 }
 
@@ -110,13 +117,14 @@ header li a:hover {
 }
 
 /* regole row e contenuto */
-.row , aside p , .central p  {
-    color: lightgrey;
+
+aside , .central {
+  float: left;
 }
+
 aside {
   width: calc(20% - 10px);
   margin-top: 15px;
-  float: left;
 }
 
 .row h4 {
@@ -150,7 +158,6 @@ aside:last-of-type {
 
 .central {
   margin-top: 15px;
-  float: left;
   width: 60%;
 }
 
