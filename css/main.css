@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
 
 /* regole generiche di pagina */
 
@@ -65,15 +65,17 @@ header li a:hover {
   background-size: cover;
   background-position: center;
   height: 500px;;
-  max-width: 100%
+  max-width: 100%;
+  border-radius: 3%;
 }
 
 
 .layover {
   /* position: absolute; */
-  height: 500px;
+  height: 100%;
   width: auto;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 3%;
   /* z-index: 10; */
 }
 
@@ -99,42 +101,61 @@ header li a:hover {
 }
 
 .title h2 {
-  font-size: 35px;
+  font-size: 40px;
+  font-weight: bold;
 }
 
-.row {
-/* debug */
-background-color: blue
+.title h2 p {
+  color: lightgrey;
+}
+
+/* regole row e contenuto */
+.row , aside p , .central p  {
+    color: lightgrey;
+}
+aside {
+  width: calc(20% - 10px);
+  margin-top: 15px;
+  float: left;
+}
+
+.row h4 {
+  padding: 20px 0;
+  font-size: 15px;
+  color: black;
+}
+.img-aside-left , .img-aside-right , .img-central {
+  height: 250px;
+  background-position: center;
+  object-fit: contain;
+  overflow: hidden;
+  border-radius: 3%;
+
+}
+.img-aside-left {
+  background-image: url(../img/img-1.jpg);
+}
+
+.img-aside-right {
+  background-image: url(../img/img-6.jpg);
 }
 
 aside:first-of-type {
-  margin-top: 15px;
   margin-right: 10px;
-  float: left;
-  width: calc(20% - 10px);
-  /* debug */
-  height: 400px;
-  background-color: lightblue;
 }
 
 aside:last-of-type {
-  margin-top: 15px;
   margin-left: 10px;
-  float: left;
-  width: calc(20% - 10px);
-  /* debug */
-  height: 400px;
-  background-color: lightblue;
 }
-
 
 .central {
   margin-top: 15px;
   float: left;
   width: 60%;
-  /* debug */
-  height: 400px;
-  background-color: lightblue;
+}
+
+.img-central {
+  background-image: url(../img/img-2.jpg);
 }
 
 /* regole crediti/piè di pagina */
