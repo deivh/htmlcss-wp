@@ -53,9 +53,35 @@ header li a:hover {
 
 .banner {
   margin-top: 20px;
-
+  position: relative;
+  background-image: url(../img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;;
+  max-width: 100%
 }
 
+
+.layover {
+  /* position: absolute; */
+  height: 500px;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* z-index: 10; */
+}
+
+.banner .title-banner {
+  font-size: 30px;
+  text-shadow: 1px 1px lightgrey;
+  color: white;
+  position: absolute;
+  bottom: calc(100% / 6);
+  left: 25px;
+  z-index: 50;
+}
+.banner div p {
+  font-size: 15px;
+}
 .title {
   margin-top: 20px;
   /* debug */
