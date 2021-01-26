@@ -20,10 +20,10 @@
   margin: auto;
 }
 
-.banner , .row , header , footer , .layover{
+/* .banner , .row , header , footer , .layover{
   max-height: 720px;
   max-width: 1080px;
-}
+} */
 
 .row , aside p , .central p , .title h2 p , header li a  {
     color: lightgrey;
@@ -78,7 +78,7 @@ header li a:hover {
 
 
 .layover {
-  /* position: absolute; */
+  position: absolute;
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3);
@@ -132,12 +132,12 @@ aside {
 .img-aside-left , .img-aside-right , .img-central {
   height: 250px;
   background-position: center;
-  object-fit: contain;
-  overflow: hidden;
   border-radius: 3%;
 
 }
-
+.row div {
+  position: relative;
+}
 aside:first-of-type {
   margin-right: 10px;
 }
