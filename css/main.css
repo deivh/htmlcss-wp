@@ -21,8 +21,8 @@
 }
 
 /* .banner , .row , header , footer , .layover{
-  max-height: 720px;
-  max-width: 1080px;
+  max-height: 1080px;
+  max-width: 1920px;
 } */
 
 .row , aside p , .central p , .title h2 p , header li a  {
